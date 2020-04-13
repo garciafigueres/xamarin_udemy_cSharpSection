@@ -1,4 +1,7 @@
-﻿namespace CSharpSection_2.Classes
+﻿using System.Threading;
+using System.Threading.Tasks;
+
+namespace CSharpSection_2.Classes
 {
     class BankAccount
     {
@@ -40,6 +43,13 @@
 
             return Balance;
         }
+
+        public async Task<string> GetData()
+        {
+            Thread.Sleep(2000);
+            return "Completed";
+        }
+
     }
 
     class ChildBankAccount : BankAccount
