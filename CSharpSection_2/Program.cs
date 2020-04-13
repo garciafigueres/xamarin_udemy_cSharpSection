@@ -16,8 +16,7 @@ namespace CSharpSection_2
             BankAccount bankAccount2 = new BankAccount(1321.32f, "John Doe");
 
             Console.WriteLine(bankAccount1.AddBalance(100f));
-            Console.WriteLine(bankAccount2.AddBalance(-1421.43f));
-
+            Console.WriteLine(bankAccount2.AddBalance(-1421.43f, true));
             Console.ReadLine();
         }
     }
