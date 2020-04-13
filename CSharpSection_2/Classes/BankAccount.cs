@@ -9,6 +9,20 @@ namespace CSharpSection_2.Classes
     class BankAccount
     {
         private float balance;
+        
+        public float Balance {
+            get {
+                return balance;
+            }
+
+            private set {
+                if (value >= 0)
+                    balance = value;
+                else
+                    balance = 0;
+            }
+        }
+
         private string owner;
 
         public BankAccount(float balance, string owner)
@@ -19,7 +33,8 @@ namespace CSharpSection_2.Classes
 
         public float AddBalance(float balanceToBeAdded)
         {
-            return balance + balanceToBeAdded;
+            Balance += balanceToBeAdded;
+            return Balance;
         }
     }
 }

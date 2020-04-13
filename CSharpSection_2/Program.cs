@@ -10,11 +10,13 @@ namespace CSharpSection_2
             Console.WriteLine(SimpleMath.Division(432.23f, 54523.2f));
 
             BankAccount bankAccount1 = new BankAccount(124321.32f, "Jane Doe");
+            Console.WriteLine(bankAccount1.Balance);
+            
 
             BankAccount bankAccount2 = new BankAccount(1321.32f, "John Doe");
 
             Console.WriteLine(bankAccount1.AddBalance(100f));
-            Console.WriteLine(bankAccount2.AddBalance(100f));
+            Console.WriteLine(bankAccount2.AddBalance(-1421.43f));
 
             Console.ReadLine();
         }
