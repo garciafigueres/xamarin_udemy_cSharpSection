@@ -13,10 +13,12 @@ namespace CSharpSection_2
             Console.WriteLine(bankAccount1.Balance);
             
 
-            BankAccount bankAccount2 = new BankAccount(1321.32f, "John Doe");
+            ChildBankAccount bankAccount2 = new ChildBankAccount(1321.32f, "John Doe", "Jane Doe");
 
             Console.WriteLine(bankAccount1.AddBalance(100f));
             Console.WriteLine(bankAccount2.AddBalance(-1421.43f, true));
+
+
             Console.ReadLine();
         }
     }

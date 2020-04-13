@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpSection_2.Classes
+﻿namespace CSharpSection_2.Classes
 {
     class BankAccount
     {
         private float balance;
-        
+
         public float Balance {
             get {
                 return balance;
@@ -45,6 +39,16 @@ namespace CSharpSection_2.Classes
                 Balance = balance + balanceToBeAdded;
 
             return Balance;
+        }
+    }
+
+    class ChildBankAccount : BankAccount
+    {
+        public string Parent { get; set; }
+
+        public ChildBankAccount(float balance, string owner, string parent) : base(balance, owner)
+        {
+            Parent = parent;
         }
     }
 }
