@@ -23,6 +23,11 @@ namespace CSharpSection_2
         }
     }
 
+    interface IOperations
+    {
+        float Remainder(float dividend, float divisor);
+    }
+
     class SimpleMath
     {
         public static float Add(float n1, float n2)
